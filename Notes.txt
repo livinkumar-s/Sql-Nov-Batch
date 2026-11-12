@@ -1,0 +1,49 @@
+data --> it refers to raw fact ot information.
+
+Database 
+-----------
+>> Organized collection of data that can be easily stored, accessed and updated.
+
+DBMS --> Database Management System
+-------------------------------------
+Relational DBMS 
+------------------
+>> Data are stored in form of Table(rows, columns).
+>> SQL is needed.
+Ex: MySQL, PostgreSQL, Oracle.....
+
+Non Relational DBMS 
+---------------------
+>> Data are stored in form of Documents(Ex:BSON...)
+>> No SQL 
+Ex: MongoDB, MariaDB.....
+
+SQL --> Structured Query Language
+-----
+>> Case-insensitive.
+select * from tbname
+SELECT * FROM tbname
+>> Delimiter is important. (statement terminator) ";"
+
+
+MySQL 
+-----
+server --> data is stored..
+workbench 
+shell --> commands
+
+connection --> server
+
+DataBase --> Tables --> data
+(Schema)
+
+
+Queries:
+-----------
+To create a Database ---> CREATE DATABASE dbname;
+To Create table --> CREATE TABLE tbName (
+    col1 datatype constraints,
+    col2 datatype constraints,
+    .
+    .
+);
