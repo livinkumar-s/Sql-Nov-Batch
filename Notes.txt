@@ -37,13 +37,88 @@ connection --> server
 DataBase --> Tables --> data
 (Schema)
 
+Datatypes 
+-------------
+Numeric 
+-----------
+INT --> whole numbers
+FLOAT --> decimal numbers 
+BIGINT --> large integers 
+DOUBLE --> large decimals
+
+String 
+--------
+CHAR(n) --> Fixed length character String. Ex: char(5) "hello", "hi hi", "bad", "sandhiya"
+VARCHAR(n) --> Variable length character String. Ex: VARCHAR(5) "Livin", "Leo"
+TEXT --> paragraph
+
+BOOLEAN 
+----------
+BOOLEAN --> 1 or 0
+
+DATE and TIME 
+---------------
+DATE --> "yyyy-mm-dd" Ex: "2026-11-17"
+TIME --> "HH:MM:SS"
+DATETIME --> both
+
+Constraint 
+------------
+>> rules you are applying to a column.
+
+PRIMARY KEY --> no null, no duplicates. it is used to identify the records uniquely.
+
+Operators 
+----------
+Comparison Operators 
+---------------------
+= 
+<> != 
+<
+>
+<=
+>=
+
 
 Queries:
 -----------
 To create a Database ---> CREATE DATABASE dbname;
+To Select Database --> USE dbname;
 To Create table --> CREATE TABLE tbName (
     col1 datatype constraints,
     col2 datatype constraints,
     .
     .
 );
+
+To insert records in a table --> INSERT INTO tbname (col details) VALUES (),()....;
+To retrive data from table --> SELECT colDetail(*) FROM tbname;
+To Update a record --> UPDATE tbname SET col=val;
+To Delete a record --> DELETE FROM tbname;
+
+CRUD 
+------
+Create --> INSERT
+Read --> SELECT 
+Update --> UPDATE
+Delete --> DELETE
+
+SQL_SAFE_UPDATES --> cannot update/delete more than 1 record. where clause is must. condition must use PK.
+
+WHERE 
+-------
+>> to do filteration with rows.
+Ex:SELECT,UPDATE,DELETE..... WHERE cond;
+cond --> expression that returns boolean.
+
+
+student 
+---------
+name   age    id(pk)(int)
+--------------------------
+ken    23      1
+qwen   null    2
+leo    32      3
+ken    33      4
+
+id=4  age=33
